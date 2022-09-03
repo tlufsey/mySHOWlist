@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/cd3cec1e43.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <title>mySHOWlist App</title>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h1 class="display-4 text-center">
+                <i class="fa-solid fa-tv text-primary"></i>
+                my<span class="text-primary">SHOW</span>list
+            </h1>
+            <form id="show-form">
+                
+                  <div class="form-group">
+                    <label for="title" class="form-label mt-4">Title</label>
+                    <input type="title" class="form-control" id="title" placeholder="Title">
+                  </div>       
+                  <div class="form-group">
+                    <label for="episodes" class="form-label mt-4">Episodes</label>
+                    <input type="episodes" class="form-control" id="episodes" placeholder="Episodes">
+                  </div>       
+                  <div class="form-group">
+                    <label for="rating" class="form-label mt-4">Rating</label>
+                    <input type="rating" class="form-control" id="rating" placeholder="Rating">
+                  </div>               
+                  <div class="d-grid gap-2 mt-4">
+                    <input type="submit" value="Add Show"
+                    class="btn btn-primary btn-block">
+                    </div>
+            </form>
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Episodes</th>
+                        <th>Rating</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="show-list"></tbody>
+            </table>
+       </div>
+       <script src="app.js"></script>
+    </body>
+</html>
